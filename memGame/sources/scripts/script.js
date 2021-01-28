@@ -231,6 +231,7 @@ function validate_array(answer, pattern){
             document.getElementById('show_current_speed').innerHTML = (speed / 1000) + "s";
 
             document.getElementById('show_current_level').innerHTML = 0;
+            counter_win = 0;
        
         }
     
