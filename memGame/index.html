@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sources/css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Memory Game</title>
+</head>
+<body onload="send_speed_to_html();">
+
+    <div id="menu_button">
+        <button id="openbtn" class="openbtn" onclick="openNav()" tabindex="1">&#9776;</button>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a id="closebtn" href="javascript:void(0)" class="closebtn" onclick="closeNav()" tabindex="6">&times;</a>
+        <div class="wrapper">
+            <div class="item_menu_position">
+                <span id="show_numbers_title" class="show_title">SHOW NUMBERS</label>
+                <label class="switch">
+                    <input tabindex="2" id="input_show_number" onclick="show_numbers()" type="checkbox" value="1">
+                    <span class="slider"></span>
+                  </label>
+            </div>
+            <div class="item_menu_position">
+                <span id="show_speed_title" class="show_title">SPEED UP</label>
+                <label class="switch">
+                    <input tabindex="3" id="input_speed_up" onclick="input_speed_up()" type="checkbox" value="1">
+                    <span class="slider"></span>
+                  </label>
+            </div>  
+            <div class="item_menu_position">
+                <span id="show_slow_title" class="show_title">SLOW DOWN</label>
+                <label class="switch">
+                    <input tabindex="4" id="input_slow_down" onclick="input_slow_down()" type="checkbox" value="1">
+                    <span class="slider"></span>
+                  </label>
+            </div> 
+            <div class="item_menu_position">
+                <span id="show_reset_title" class="show_title">RESET SPEED</label>
+                <label class="switch">
+                    <input tabindex="5" id="input_reset" onclick="input_reset()" type="checkbox" value="1">
+                    <span class="slider"></span>
+                  </label>
+            </div>   
+            <div id="currency" class="show_title currency">
+                <span>CURRENT SPEED: </span>
+                <span id="show_current_speed"></span>
+            </div>
+            <div id="current_level" class="show_title currency">
+                <span>YOU ARE AT LEVEL: </span>
+                <span id="show_current_level"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="lost_warning" class="lost_warning" hidden>&nbsp;IF YOU LOSE YOU'LL START &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM BEGINNING...</div>
+        <div id="difficult_warning" class="difficult_warning" hidden>DIFFICULT LEVEL WILL GROW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UP EACH WIN...</div>
+        <input id="counter" class="counter" value="0" disabled hidden></input>
+        <div id="title" class="title">MemGame</div>
+        <div id="your_turn" class="your_turn" hidden>YOUR TURN!</div>
+        <div id="correct" class="correct" hidden>CORRECT!</div>
+        <div id="false" class="false" hidden>INCORRECT!</div>
+        <div id="catch_span" class="grid">
+            <div class="row">
+                <div id="cell7" class="cell"><span hidden>7</span></div>
+                <div id="cell8" class="cell"><span hidden>8</span></div>
+                <div id="cell9" class="cell"><span hidden>9</span></div>
+            </div>
+            <div class="row">
+                <div id="cell4" class="cell"><span hidden>4</span></div>
+                <div id="cell5" class="cell"><span hidden>5</span></div>
+                <div id="cell6" class="cell"><span hidden>6</span></div>
+            </div>
+            <div class="row">
+                <div id="cell1" class="cell"><span hidden>1</span></div>
+                <div id="cell2" class="cell"><span hidden>2</span></div>
+                <div id="cell3" class="cell"><span hidden>3</span></div>
+            </div>
+        </div>  
+        <button onclick="start_game()" id="start_button" class="button">START</button>  
+        <button onclick="start_game()" id="play_again" class="button" hidden tabindex="7" >PLAY AGAIN</button>
+        <button onclick="exitGame();" id="exit" class="button" hidden tabindex="8">EXIT</button>
+        <audio id="audio" src="./sources/audio/click_sound.mp3"></audio>
+        <audio id="audio_seq" src="./sources/audio/seq_sound.mp3"></audio>
+    </div>
+
+    <script src="./sources/scripts/script.js"></script>
+</body>
+</html>
