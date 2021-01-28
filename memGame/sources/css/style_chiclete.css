@@ -181,16 +181,16 @@ input:checked + .slider:before {
 .cell {
     width: 100px;
     height: 100px;
-    background: rgba(109, 108, 173, 0.993);
+    background: rgb(131, 89, 199);
     display: table-cell;
 }
 
 .cell:active {
-    background-color: blue;
+    background-color: rgb(240, 86, 176);
 }
 
 .change {
-    background-color: blue;
+    background-color: rgb(240, 86, 176);
 }
 
 .your_turn {
@@ -246,7 +246,7 @@ input:checked + .slider:before {
     left: 46%;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
     width: 30px;
-    background-color: pink;
+    background-color: transparent;
     border: none;
 
 }
@@ -274,7 +274,9 @@ input:checked + .slider:before {
 }
 
 .button {
-    background-color: peru;
+    /*background-color: rgb(100, 93, 109);*/
+    background-color: pink;
+    color: purple;
 }
 
 .button:hover {
