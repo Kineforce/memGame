@@ -59,10 +59,14 @@ function handleKeyDown(event){
         play();
     } 
     if (event.key == 's'){
-        if (document.getElementById('start_button').hasAttribute('hidden')){
+        if (!document.getElementById('start_button').hasAttribute('hidden')){
             document.getElementById('start_button').click();
-        }else{
+            console.log("Start_button is showing!");
+        }else if (document.getElementById('play_again').hasAttribute('hidden')){
+            console.log("Star_button is hidden!");
+        }else {
             document.getElementById('play_again').click();
+            console.log("Play_agan is showing!");
         }
     } 
     if (event.key == 'e'){
@@ -80,10 +84,10 @@ function handleKeyDown(event){
     if (event.key == 'n'){
         document.getElementById('input_show_number').click();
     }
-    if (event.key == 'ArrowUp'){
+    if (event.key == '+'){
         document.getElementById('input_speed_up').click();
     }
-    if (event.key == 'ArrowDown'){
+    if (event.key == '-'){
         document.getElementById('input_slow_down').click();
     }
     if (event.key == 'r'){
@@ -316,6 +320,9 @@ async function start_game(){
 
     document.getElementById('correct').setAttribute("hidden", "hidden");
     document.getElementById('false').setAttribute("hidden", "hidden");
+    document.getElementById('start_button').setAttribute('hidden', 'hidden');
+    document.getElementById('play_again').setAttribute('hidden', 'hidden');
+    document.getElementById('exit').setAttribute('hidden', 'hidden');
 
     if (lost == 1){
         document.getElementById('lost_warning').removeAttribute("hidden");

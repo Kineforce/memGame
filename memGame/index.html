@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sources/css/style.css">
+    <link rel="stylesheet" href="./sources/css/style_chiclete.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Memory Game</title>
 </head>
@@ -18,30 +18,30 @@
         <div class="wrapper">
             <div class="item_menu_position">
                 <span id="show_numbers_title" class="show_title">SHOW NUMBERS</label>
-                <label class="switch">
+                <label class="switch_diff" title="n">
                     <input tabindex="2" id="input_show_number" onclick="show_numbers()" type="checkbox" value="1">
                     <span class="slider"></span>
                   </label>
             </div>
             <div class="item_menu_position">
                 <span id="show_speed_title" class="show_title">SPEED UP</label>
-                <label class="switch">
+                <label class="switch" title="+">
                     <input tabindex="3" id="input_speed_up" onclick="input_speed_up()" type="checkbox" value="1">
-                    <span class="slider"></span>
+                    <a class="myButton">+</a>
                   </label>
             </div>  
             <div class="item_menu_position">
                 <span id="show_slow_title" class="show_title">SLOW DOWN</label>
-                <label class="switch">
+                <label class="switch" title="-">
                     <input tabindex="4" id="input_slow_down" onclick="input_slow_down()" type="checkbox" value="1">
-                    <span class="slider"></span>
+                    <a class="myButton">--</a>
                   </label>
             </div> 
             <div class="item_menu_position">
                 <span id="show_reset_title" class="show_title">RESET SPEED</label>
-                <label class="switch">
+                <label class="switch" title="r">
                     <input tabindex="5" id="input_reset" onclick="input_reset()" type="checkbox" value="1">
-                    <span class="slider"></span>
+                    <a class="myButton">R</a>
                   </label>
             </div>   
             <div id="currency" class="show_title currency">
@@ -64,24 +64,24 @@
         <div id="false" class="false" hidden>INCORRECT!</div>
         <div id="catch_span" class="grid">
             <div class="row">
-                <div id="cell7" class="cell"><span hidden>7</span></div>
-                <div id="cell8" class="cell"><span hidden>8</span></div>
-                <div id="cell9" class="cell"><span hidden>9</span></div>
+                <div id="cell7" class="cell" title="7"><span hidden>7</span></div>
+                <div id="cell8" class="cell" title="8"><span hidden>8</span></div>
+                <div id="cell9" class="cell" title="9"><span hidden>9</span></div>
             </div>
             <div class="row">
-                <div id="cell4" class="cell"><span hidden>4</span></div>
-                <div id="cell5" class="cell"><span hidden>5</span></div>
-                <div id="cell6" class="cell"><span hidden>6</span></div>
+                <div id="cell4" class="cell" title="4"><span hidden>4</span></div>
+                <div id="cell5" class="cell" title="5"><span hidden>5</span></div>
+                <div id="cell6" class="cell" title="6"><span hidden>6</span></div>
             </div>
             <div class="row">
-                <div id="cell1" class="cell"><span hidden>1</span></div>
-                <div id="cell2" class="cell"><span hidden>2</span></div>
-                <div id="cell3" class="cell"><span hidden>3</span></div>
+                <div id="cell1" class="cell" title="1"><span hidden>1</span></div>
+                <div id="cell2" class="cell" title="2"><span hidden>2</span></div>
+                <div id="cell3" class="cell" title="3"><span hidden>3</span></div>
             </div>
         </div>  
-        <button onclick="start_game()" id="start_button" class="button">START</button>  
-        <button onclick="start_game()" id="play_again" class="button" hidden tabindex="7" >PLAY AGAIN</button>
-        <button onclick="exitGame();" id="exit" class="button" hidden tabindex="8">EXIT</button>
+        <button onclick="start_game()" id="start_button" class="button" title="s">START</button>  
+        <button onclick="start_game()" id="play_again" class="button" hidden tabindex="7" title="s">PLAY AGAIN</button>
+        <button onclick="exitGame();" id="exit" class="button" hidden tabindex="8" title="e">EXIT</button>
         <audio id="audio" src="./sources/audio/click_sound.mp3"></audio>
         <audio id="audio_seq" src="./sources/audio/seq_sound.mp3"></audio>
     </div>
