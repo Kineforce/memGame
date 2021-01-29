@@ -75,6 +75,7 @@
     font-family: monospace;
     width: 100px;
     height: 50px;
+    color: greenyellow;
 }
 
 #play_again {
@@ -85,6 +86,8 @@
     font-family: monospace;
     width: 100px;
     height: 50px;
+    color: greenyellow;
+
 }
 
 #exit {
@@ -95,6 +98,7 @@
     font-family: monospace;
     width: 100px;
     height: 50px;
+    color: red;
 }
 
 .grid {
@@ -129,7 +133,7 @@
 /* TEMA CHICLETE */
 
 body {
-    background-color: pink;
+    background-color: black;
     width: 100%;
     height: 100%;
     margin:auto;
@@ -137,7 +141,7 @@ body {
 
 .show_title {
     font-family: monospace;
-    color: rebeccapurple;
+    color: greenyellow;
     font-size: 20px;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
@@ -163,13 +167,13 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: pink;
+    background-color: greenyellow;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked + .slider {
-    background-color: purple;
+    background-color: green;
 }
 
 input:checked + .slider:before {
@@ -181,23 +185,24 @@ input:checked + .slider:before {
 .cell {
     width: 100px;
     height: 100px;
-    background: rebeccapurple;
+    background: black;
     display: table-cell;
+    border: 1px solid white;
 }
 
 .cell:active {
-    background-color: blue;
+    background-color: greenyellow;
 }
 
 .change {
-    background-color: blue;
+    background-color: greenyellow;
 }
 
 .your_turn {
     position: absolute;
     margin-bottom: 20px;
     font-family: monospace;
-    color: royalblue;
+    color: green;
     font-size: 50px;
     left: 22%;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
@@ -207,7 +212,7 @@ input:checked + .slider:before {
 .correct {
     position: absolute;
     margin-bottom: 20px;
-    color: seagreen;
+    color: greenyellow;
     font-family: monospace;
     font-size: 50px;
     left: 29%;
@@ -230,7 +235,7 @@ input:checked + .slider:before {
     position: absolute;
     margin-bottom: 20px;
     font-family: monospace;
-    color: crimson;
+    color: greenyellow;
     font-size: 50px;
     left: 30%;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
@@ -246,7 +251,7 @@ input:checked + .slider:before {
     left: 46%;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
     width: 30px;
-    background-color: pink;
+    background-color: transparent;
     border: none;
 
 }
@@ -255,7 +260,7 @@ input:checked + .slider:before {
     position: absolute;
     margin-bottom: 20px;
     font-family: monospace;
-    color: purple;
+    color: crimson;
     font-size: 30px;
     left: 8%;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
@@ -274,22 +279,23 @@ input:checked + .slider:before {
 }
 
 .button {
-    background-color: peru;
+    background-color: black;
+    border: 1px solid white;
 }
 
 .button:hover {
-    background-color: azure;
+    background-color: rgb(75, 75, 75);
 }
 
 .button:focus {
-    background-color: azure;
+    background-color: rgb(75, 75, 75);
 }
 
 .cell span{
     position: relative;
     top: 40%;
     left: 45%;
-    color: whitesmoke;
+    color: green;
 }
 
 /* The sidebar menu */
@@ -318,13 +324,13 @@ input:checked + .slider:before {
 
 /* When you mouse over the navigation links, change their color */
 .sidebar span:hover {
-    color: azure;
+    color: rgb(75, 75, 75);
 }
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
     position: absolute;
-    color: pink;
+    color: whitesmoke;
     top: 25px;
     right: 25px;
     font-size: 36px;
@@ -335,23 +341,23 @@ input:checked + .slider:before {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: pink;
-    color: purple;
+    background-color: black;
+    color: greenyellow;
     padding: 10px 15px;
 }
 
 .openbtn:hover {
-    background-color: azure;
+    background-color: rgb(75, 75, 75);
 }
 
 .openbtn:focus {
     outline: none;
-    background-color: azure;
+    background-color: rgb(75, 75, 75);
 }
 
 .myButton {
-	box-shadow:inset 0px -3px 7px 0px purple;
-	background:linear-gradient(to bottom, #ffa4f3 5%, #0688fa 100%);
+	box-shadow:inset 0px -3px 7px 0px black;
+	background:linear-gradient(to bottom, yellowgreen 100%, #0688fa 100%);
 	background-color:#2dabf9;
 	border-radius:7px;
 	border:2px solid #0b0e07;
@@ -370,8 +376,8 @@ input:checked + .slider:before {
 }
 
 .myButton:hover {
-	background:linear-gradient(to bottom, pink 5%, purple 100%);
-	background-color: purple;
+	background:linear-gradient(to bottom, red 5%, crimson 100%);
+	background-color: crimsom;
 }
 
 
