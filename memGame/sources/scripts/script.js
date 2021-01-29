@@ -1,3 +1,21 @@
+var clicks = [1, 3]
+var speed = 1000;
+var win = 0;
+var lost = 0;
+var counter_win = 0;
+
+document.getElementById("theme_hacker_lu").addEventListener("click", function() {
+    var css_link = document.getElementById("css_link");
+    css_link.setAttribute("href", "./sources/css/style_hacker.css")
+
+})
+
+document.getElementById("theme_chiclete_ka").addEventListener("click", function() {
+    var css_link = document.getElementById("css_link");
+    css_link.setAttribute("href", "./sources/css/style_chiclete.css")
+
+})
+
 function play() {
     let audio = document.getElementById('audio');
     audio.currentTime = 0
@@ -9,12 +27,6 @@ function seq_play() {
     audio.currentTime = 0
     audio.play(); 
 }
-
-var clicks = [1, 3]
-var speed = 1000;
-var win = 0;
-var lost = 0;
-var counter_win = 0;
 
 window.addEventListener('keydown', handleKeyDown, true);
 window.addEventListener('keyup', handleKeyUp, true);

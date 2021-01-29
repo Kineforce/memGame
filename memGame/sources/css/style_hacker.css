@@ -130,7 +130,7 @@
 }
 
 
-/* TEMA CHICLETE */
+/* TEMA HACKER */
 
 body {
     background-color: black;
@@ -386,7 +386,39 @@ input:checked + .slider:before {
 	top:1px;
 }
 
+.themes {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    left: 5%;
+}
 
+#theme_chiclete_ka {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: hotpink;
+    margin-left: 40px;
+    border-radius: 5in;
+    cursor: pointer;
+}
 
-/* TEMA CHICLETE */
+#theme_hacker_lu {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: greenyellow;
+    border-radius: 5in;
+    cursor: pointer;
+}
+
+#title_themes {
+    float: left;
+    color:greenyellow;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 8px;
+}
+
+/* TEMA HACKER */
 
