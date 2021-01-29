@@ -10,7 +10,6 @@ function seq_play() {
     audio.play(); 
 }
 
-
 var clicks = [1, 3]
 var speed = 1000;
 var win = 0;
@@ -161,7 +160,7 @@ function input_slow_down(){
         speed = parseInt(localStorage.getItem("speed"));
     }
 
-    if (speed > 50){
+    if (speed >= 50){
         speed = speed + 50;
     }
 
