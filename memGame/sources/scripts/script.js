@@ -157,7 +157,9 @@ function setStorageVariable(){
 
 function send_speed_to_html(){
 
-    document.getElementById('show_current_level').innerHTML = 0;
+    if (win == 0){
+        document.getElementById('show_current_level').innerHTML = 0;
+    }
 
     if (localStorage.getItem("speed")){
         document.getElementById('show_current_speed').innerHTML = (parseInt(localStorage.getItem("speed")) / 1000) + "s";
@@ -168,6 +170,7 @@ function send_speed_to_html(){
 }
 
 function input_slow_down(){
+
     if (localStorage.getItem("speed")){
         speed = parseInt(localStorage.getItem("speed"));
     }
@@ -177,6 +180,7 @@ function input_slow_down(){
     }
 
     setStorageVariable();    
+    
 }
 
 function input_speed_up(){
@@ -189,7 +193,8 @@ function input_speed_up(){
         speed = speed - 50;
     }
 
-    setStorageVariable();
+    setStorageVariable();  
+     
 }
 
 function show_numbers(){
