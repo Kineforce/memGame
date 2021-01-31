@@ -7,13 +7,13 @@ var counter_win = 0;
 document.getElementById("theme_hacker_lu").addEventListener("click", function() {
     var css_link = document.getElementById("css_link");
     css_link.setAttribute("href", "./sources/css/style_hacker.css")
-
+    localStorage.setItem("theme", "hacker");
 })
 
 document.getElementById("theme_chiclete_ka").addEventListener("click", function() {
     var css_link = document.getElementById("css_link");
     css_link.setAttribute("href", "./sources/css/style_chiclete.css")
-
+    localStorage.setItem("theme", "chiclete");
 })
 
 function play() {
@@ -156,6 +156,11 @@ function setStorageVariable(){
 }
 
 function send_speed_to_html(){
+
+    if (localStorage.getItem("theme")){
+        var css_link = document.getElementById("css_link");
+        css_link.setAttribute("href", "./sources/css/style_" + localStorage.getItem("theme") + ".css");
+    }
 
     if (win == 0){
         document.getElementById('show_current_level').innerHTML = 0;
