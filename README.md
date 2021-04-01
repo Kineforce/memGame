@@ -1,4 +1,4 @@
 # memGame
-Joguinho sendo desenvolvido com HTML, CSS e Javascript
+A little memory based game that i've built using pure JS, CSS and HTML. 
 
-Você pode acessar ele neste link: https://jsmemgame.000webhostapp.com/
+Play here: https://jsmemgame.000webhostapp.com/
